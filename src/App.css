@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  width: 100%;
+  
+}
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+}
+.button {
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  background-color: rgb(160, 5, 5);
+  color: white;
+  transition: all 0.5s ease;
+}
+.button:hover{
+  background-color: rgb(100, 4, 4);
+}
+
+.section{
+  padding: 6rem 0 2rem;
+}
+.section__subtitle{
+  margin-bottom: 4rem;
+}
+
+.container{
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Desktop */
+
+@media screen and (max-width: 992px){
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .button{
+    padding: 1rem 1.75rem;
+  }
+}
+
+/* Medium */
+
+@media screen and (max-width: 768px){
+  body{
+    margin: 0 0 126px 0;
+  }
+  .section{
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle{
+    margin-bottom: 2rem 0 4rem;
+  }
+
+}
+
+@media screen and (max-width: 576px){
+  
+}
+
+/* Small*/
+
+@media screen and (max-width: 350px){
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+}
