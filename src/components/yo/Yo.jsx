@@ -3,6 +3,7 @@ import "./yo.css";
 import CV from "../../assets/CV-FernandoLara.pdf"
 import PerfImg from "../../assets/perfil.jpeg"
 import Info from "./Info";
+import Skills from "./Skills";
 const Yo = () => {
     return(
         <section className="yo section" id="yo">
@@ -17,6 +18,8 @@ const Yo = () => {
                     <a download="" href={CV} className="button button--flex">Descarga mi CV <i class="uil uil-file"></i></a>
                 </div>
             </div>
+
+            <Skills />
         </section>
     )
 }
