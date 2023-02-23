@@ -1,6 +1,8 @@
 import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx';
 import Yo from './components/yo/Yo.jsx';
+
+import Footer from './components/footer/Footer.jsx';
 import './App.css';
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <main>
         <Home/>
         <Yo/>
+
+        <Footer/>
       </main>
     </div>
   );
