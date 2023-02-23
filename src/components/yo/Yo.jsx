@@ -18,8 +18,7 @@ const Yo = () => {
                     <a download="" href={CV} className="button button--flex">Descarga mi CV <i class="uil uil-file"></i></a>
                 </div>
             </div>
-
-            <Skills />
+            <Skills/>
         </section>
     )
 }

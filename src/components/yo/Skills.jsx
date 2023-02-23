@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+
 
 const Skills = () => {
     return(
@@ -81,6 +82,14 @@ const Skills = () => {
                                     <h3 className="skills__name">Node JS
                                     </h3>
                                     <span className="skills__level">Basic</span>
+                                </div>
+                            </div>
+                            <div className="skills__data">
+                                <i class="uil uil-hourglass"></i>
+                                <div>
+                                    <h3 className="skills__name">Learning
+                                    </h3>
+                                    <span className="skills__level">...</span>
                                 </div>
                             </div>
                         </div>
