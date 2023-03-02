@@ -11,8 +11,6 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/fernando-lara-/" className="footer__social-link" target="_blank"><i class="bx bxl-linkedin"></i></a>
 
                     <a href="https://github.com/Ferlara02" className="footer__social-link" target="_blank"><i class="bx bxl-github"></i></a>
-
-                    <a href="https://twitter.com/anreverso" className="footer__social-link" target="_blank"><i class="bx bxl-twitter"></i></a>
                 </div>
                 <span className="footer__copy">© Fernando Lara. All rights reserved.</span>
             </div>
