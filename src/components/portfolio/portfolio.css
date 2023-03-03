@@ -1,0 +1,84 @@
+.portfolio__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.portfolio__container h3{
+    margin-bottom: 1rem;
+}
+.portfolio__icon{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.projects__list{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+.project{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid rgb(148, 144, 144);
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+.project img{
+    border-radius: 1rem;
+}
+.project:hover{
+    cursor: pointer;
+    content: "";
+    background: linear-gradient(
+        45deg, rgb(248, 247, 247), rgba(170, 16, 16, 0.214), rgb(248, 247, 247), rgba(164, 11, 11, 0.367)
+    );
+    background-size: 800%;
+    border: 1px solid rgba(160, 160, 228, 0.57);
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.project__description{
+    padding: 1rem;
+}
+@media screen and (min-width: 993px){
+    .project img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 992px){
+    .project{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img"
+                             "text";
+        width: 80%;
+        border: 1px solid rgb(148, 144, 144);
+        border-radius: 1rem;
+    }
+    .project img{
+        grid-area: img;
+        width: 100%;
+    }
+    .project__description{
+        grid-area: text;
+        width: 100%;
+        font-size: small;
+    }
+}

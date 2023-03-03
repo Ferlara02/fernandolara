@@ -6,6 +6,7 @@ import Info from "./Info";
 import Skills from "./Skills";
 const Yo = () => {
     return(
+        
         <section className="yo section" id="yo">
             <h2 className="yo__title2">Acerca de mí</h2>
             <div className="yo__container container grid">
@@ -20,6 +21,8 @@ const Yo = () => {
             </div>
             <Skills/>
         </section>
+        
+        
     )
 }
 
