@@ -16,7 +16,7 @@ const Portfolio = () =>{
     return(
         <div className="portfolio__container container" id="portfolio">
             <i class="uil uil-bag portfolio__icon"></i>
-            <h3>Proyectos</h3>
+            <h3 data-aos="flip-left">Proyectos</h3>
             <ProjectsList projects1={projects1} />
         </div>
     )

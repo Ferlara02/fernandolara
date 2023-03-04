@@ -16,9 +16,10 @@
 }
 
 .yo__info{
-    grid-template-columns: repeat(3, 140px);
+    grid-template-columns: repeat(2, 140px);
     gap: 0.5rem;
     margin-bottom: 2rem;
+    justify-content: center;
 }
 
 .yo__box{
@@ -139,7 +140,7 @@
 }
 @media screen and (max-width: 576px){
     .yo__info{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 0.1rem;
         padding: 0 0.5rem;
     }

@@ -3,7 +3,7 @@ import React from "react";
 
 const Skills = () => {
     return(
-        <section className="skills section">
+        <section data-aos="fade-right" className="skills section">
             <h2 className="section__title">Skills</h2>
 
             <div className="skills__container container grid">

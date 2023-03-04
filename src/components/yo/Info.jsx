@@ -14,12 +14,6 @@ const Info = () => {
                 <h3 className="yo__title">Proyectos</h3>
                 <span className="yo__subtitle">5 proyectos reales completados.</span>
             </div>
-
-            <div className="yo__box">
-                <i class="uil uil-10-plus"></i>
-                <h3 className="yo__title">Cualidades</h3>
-                <span className="yo__subtitle">Autónomo, apasionado y con vocación.</span>
-            </div>
         </div>
     )
 }
