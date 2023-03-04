@@ -3,7 +3,7 @@ import Project from "./project";
 
 const ProjectsList = ({projects1}) =>{
     return(
-        <div data-aos="fade-left" className="projects__list">
+        <div data-aos="fade-up" className="projects__list">
             {projects1.map((project) => (
                 <Project project={project} />
             ))}

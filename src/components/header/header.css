@@ -6,7 +6,9 @@
     background-color: white;
     z-index: 100;
 }
-
+.nav__logo{
+    width: 20%;
+}
 .nav{
     display: flex;
     justify-content: space-between;
