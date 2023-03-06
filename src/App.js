@@ -24,11 +24,12 @@ function App() {
   return (
     <div className="App" data-theme={theme}>
       <Header/>
-      <div className='theme-toggle' onClick={switchTheme
+      
+      <main>
+      <div alt={theme + "mode"} className='theme-toggle' onClick={switchTheme
       }>
         {theme === "light" ? <i class="uil uil-moon"></i> : <i class="uil uil-sun"></i>}
       </div>
-      <main>
         <Home/>
         <Yo/>
         <Portfolio/>
