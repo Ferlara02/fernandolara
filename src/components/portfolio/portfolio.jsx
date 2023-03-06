@@ -1,6 +1,6 @@
 import "./portfolio.css"
 
-import { useState, React, useEffect } from "react"
+import { useState, React, useEffect, useRef } from "react"
 import { projects } from "../../mock/projects.mock"
 import ProjectsList from "./projectList"
 
@@ -9,7 +9,17 @@ const Portfolio = () =>{
     const [open, setOpen] = useState(false);
     
     const Options = ["Todos", "Reales", "Prácticas"];
-    const [option, setOption] = useState(Options[0])
+    const [option, setOption] = useState(Options[0]);
+
+    const menuRef = useRef();
+    const titleRef = useRef();
+
+    window.addEventListener("click", (e) => {
+        if(e.target !== menuRef.current && e.target !== titleRef.current){
+            setOpen(false);
+        }
+    });
+
     useEffect(() => {
         new Promise((resolve) => resolve(projects))
             .then((data) => {
@@ -30,10 +40,10 @@ const Portfolio = () =>{
 
             <div className="containerTitle">
                 <h3 data-aos="flip-left">Proyectos</h3>
-                <h4 className="select" onClick={() => setOpen(!open)}>{option}<i class="uil uil-angle-down"></i></h4>
+                <h4 ref={titleRef} className="select" onClick={() => setOpen(!open)}>{option}<i class="uil uil-angle-down"></i></h4>
                 {
                     open &&  (
-                        <div className="containerOptions">
+                        <div ref={menuRef} className="containerOptions">
                             <ul className="optionsProjects">
                                 {Options.map((option) => (
                                     <li onClick={() => {
