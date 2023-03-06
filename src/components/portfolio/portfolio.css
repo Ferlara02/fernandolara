@@ -132,3 +132,46 @@
         text-align: center;
     }
 }
+
+
+/* TITLE Y FILTER */
+
+.containerTitle{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.containerOptions{
+    background-color: white;
+    padding: 1rem 0.5rem;
+    border-radius: 9px;
+    border: 0.1px solid rgb(160, 5, 5);
+    position: absolute;
+    right: 0px;
+    top: 1.7rem;
+}
+
+.select{
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    height: 1.7rem;
+    padding: 0 6px 0 6px;
+}
+.select:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+}
+
+.optionsProjects li{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+.optionsProjects li:hover{
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+}

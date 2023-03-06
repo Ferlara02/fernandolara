@@ -9,7 +9,8 @@ export const projects = [
         description: "Un proyecto maquetado con React JS, que simula un eCommerce de películas en Blu-Ray. Resuelve una base de datos de productos en Firebase, como a su vez crea una colección de Ventas en el mismo.",
         img: Movie,
         vivo: "https://movie-store-fer.netlify.app/",
-        github: "https://github.com/Ferlara02/movieStore-reactJS"
+        github: "https://github.com/Ferlara02/movieStore-reactJS",
+        category: "Prácticas"
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const projects = [
         description: "Proyecto real para un taller mecánico de embergadura. Estuve a cargo del diseño, desarrollo de marca y maquetado desde 0. Sitio web full responsive con SASS y Bootstrap, con prácticas SEO y de optimización de carga.",
         img: Wrg,
         vivo: "https://williamrallygroup.000webhostapp.com/",
-        github: "https://github.com/Ferlara02/tallerMecanico"
+        github: "https://github.com/Ferlara02/tallerMecanico",
+        category: "Reales"
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const projects = [
         description: "Una calculadora de baldozas que indica al usuario la cantidad que necesita para su piso, en función de los metros cuadrados y del tamaño de la misma. Incluye un cart para agregar las baldozas calculadas.",
         img: Calc,
         vivo: "https://ferlara02.github.io/CursoJS/index.html",
-        github: "https://github.com/Ferlara02/CursoJS"
+        github: "https://github.com/Ferlara02/CursoJS",
+        category:"Prácticas"
     } 
 ]
