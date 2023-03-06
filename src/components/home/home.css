@@ -12,7 +12,7 @@
 }
 .home__social-icon{
     font-size: 1.25rem;
-    color: rgb(62, 62, 62);
+    color: var(--text-secondary);
 }
 .home__social-icon:hover{
     color: rgb(160, 5, 5);
@@ -30,7 +30,7 @@
 .home__description {
     max-width: 400px;
     margin-bottom: 3rem;
-    color: rgb(75, 74, 74);
+    color: var(--text-secondary);
 }
 
 .home__img{

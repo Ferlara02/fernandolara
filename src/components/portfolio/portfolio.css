@@ -22,12 +22,12 @@
 }
 .projects__list a{
     text-decoration: none;
-    color: black;
+    color: var(--text-primary);
 }
 .project{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    border: 1px solid rgb(148, 144, 144);
+    border: 1px solid var(--text-secondary);
     border-radius: 1rem;
     transition: all 0.2s ease;
 }
@@ -37,7 +37,7 @@
 .project:hover{
     content: "";
     background: linear-gradient(
-        45deg, rgb(248, 247, 247), rgba(170, 16, 16, 0.214), rgb(248, 247, 247), rgba(164, 11, 11, 0.367)
+        45deg, var(--background), rgba(170, 16, 16, 0.214), var(--background), rgba(164, 11, 11, 0.367)
     );
     background-size: 800%;
     border: 1px solid rgb(160, 5, 5);
@@ -61,20 +61,23 @@
     flex-direction: column;
     justify-content: center;
     padding: 0.2rem;
-    border: 1px solid black;
+    border: 1px solid var(--text-primary);
     text-align: center;
     width: 50px;
     height: 50px;
     transition: 0.2s all ease;
 }
 .botonCode:hover{
-    background-color: white;
+    background-color: var(--background);
     color: rgb(160, 5, 5);
 }
 
 .project__description{
     padding: 1rem;
     display: flex;
+}
+.desc p{
+    color: var(--text-secondary);
 }
 .desc{
     display: flex;
@@ -94,7 +97,7 @@
         grid-template-areas: "img"
                              "text";
         width: 80%;
-        border: 1px solid rgb(148, 144, 144);
+        border: 1px solid var(--text-secondary);
         border-radius: 1rem;
     }
     .project img{
@@ -145,7 +148,7 @@
 }
 
 .containerOptions{
-    background-color: white;
+    background-color: var(--background);
     padding: 1rem 0.5rem;
     border-radius: 9px;
     border: 0.1px solid rgb(160, 5, 5);
@@ -162,7 +165,7 @@
     padding: 0 6px 0 6px;
 }
 .select:hover{
-    background-color: rgb(235, 235, 235);
+    background-color: var(--third);
     border-radius: 8px;
 }
 
@@ -172,6 +175,6 @@
     padding: 0 0.5rem;
 }
 .optionsProjects li:hover{
-    background-color: rgb(235, 235, 235);
+    background-color: var(--third);
     border-radius: 8px;
 }

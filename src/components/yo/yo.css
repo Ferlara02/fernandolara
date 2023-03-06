@@ -23,8 +23,8 @@
 }
 
 .yo__box{
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--background);
+    border: 1px solid var(--text-secondary);
     border-radius: 0.75rem;
     text-align: center;
     padding: 1rem;
@@ -64,7 +64,7 @@
 }
 
 .skills__content {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--text-secondary);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
     max-width: 320px;

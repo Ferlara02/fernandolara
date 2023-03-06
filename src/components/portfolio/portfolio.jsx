@@ -40,7 +40,7 @@ const Portfolio = () =>{
 
             <div className="containerTitle">
                 <h3 data-aos="flip-left">Proyectos</h3>
-                <h4 ref={titleRef} className="select" onClick={() => setOpen(!open)}>{option}<i class="uil uil-angle-down"></i></h4>
+                <h4 ref={titleRef} className="select" onClick={() => setOpen(!open)}>{option} <i class="uil uil-angle-down"></i> </h4>
                 {
                     open &&  (
                         <div ref={menuRef} className="containerOptions">
