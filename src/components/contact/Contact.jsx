@@ -1,14 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import "./contact.css";
 import 'react-toastify/dist/ReactToastify.css';
+import Spinner from 'react-bootstrap/Spinner';
 
 const Contact = () => {
     const form = useRef();
-
+    const [loading, setLoading] = useState(false);
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true)
         emailjs.sendForm('service_v837z66', 'template_bkkbr1h', form.current, 'vSSQ5-PdZnwQ58Aof')
             .then((result) => {
                 console.log(result.text);
@@ -22,6 +24,7 @@ const Contact = () => {
                     progress: undefined,
                     theme: "light",
                 });
+                setLoading(false);
             }).catch((error) => {
                 toast.error(`Algo salio mal ${error}`, {
                     position: "bottom-right",
@@ -57,7 +60,10 @@ const Contact = () => {
                             <label className="contact__form-tag">Mensaje</label>
                             <textarea name="mensaje" id="" cols="30" rows="10" className="contact__form-input" placeholder="Escribeme tu propuesta" required></textarea>
                         </div>
-                        <button className="button button--flex"><span>Enviar</span> <i class="uil uil-navigator"></i> </button>
+                        <button className="button button--flex">
+                            {loading ? <Spinner animation="border" role="status"><span>Enviando...</span>
+                            </Spinner> : <span>Enviar</span> } 
+                        </button>
                     </form>
                 </div>
             </div>

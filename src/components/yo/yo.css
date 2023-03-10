@@ -174,7 +174,8 @@ a span{
         padding: 0 0.5rem;
     }
     .yo__description{
-        padding: 0;
+        text-align: start;
+        padding: 10px;
     }
     .yo__img{
         width: 140px;
