@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Logo } from "../../assets/logo";
 import "./header.css";
-
+import SinT from "../../assets/logo.png"
 const Header = () => {
     const [Toggle, showMenu] = useState(false);
 
@@ -9,7 +9,7 @@ const Header = () => {
     return(
         <header className="header">
             <nav className="nav container">
-                <a href="index.html" className="nav__logo"><Logo/></a>
+                <a href="index.html" className="nav__logo"><img src={SinT} alt="logo" /></a>
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list">
                         <li className="nav__item">
