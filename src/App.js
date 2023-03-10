@@ -26,6 +26,9 @@ function App() {
       <Header/>
       
       <main>
+      <a href='https://github.com/Ferlara02/fernandolara' target="_blank" className="theme-toggle code">
+        <i class="uil uil-arrow"></i>
+      </a>
       <div alt={theme + "mode"} className='theme-toggle' onClick={switchTheme
       }>
         {theme === "light" ? <i class="uil uil-moon"></i> : <i class="uil uil-sun"></i>}

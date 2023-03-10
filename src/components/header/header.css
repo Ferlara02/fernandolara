@@ -27,6 +27,7 @@
 .nav__list {
     display: flex;
     column-gap: 3.8rem;
+
 }
 .nav__link {
     display: flex;
@@ -43,6 +44,19 @@
 /******* BREAKPOINTS *******/
 
 /*Tablet*/
+@media screen and (max-width: 992px){
+    .nav{
+        justify-content: flex-start;
+        gap: 10rem;
+    }
+    .nav__list{
+        
+        column-gap: 2.8rem;
+    }
+    .nav__logo{
+        justify-content: flex-start;
+    }
+}
 
 @media screen and (max-width: 768px){
     .header{

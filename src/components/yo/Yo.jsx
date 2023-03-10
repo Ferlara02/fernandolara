@@ -15,7 +15,7 @@ const Yo = () => {
                 <div className="yo__data">
                     <Info/>
 
-                    <p className="yo__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam rerum vel a exercitationem, dolor, in aperiam laborum nostrum iste facilis modi porro debitis adipisci mollitia qui! Est, eius similique?</p>
+                    <p className="yo__description">Finalicé la carrera de Desarrollo web Frontend en diciembre del 2022. Desde entonces, no paré de practicar lo adquirido a la vez que incorporaba nuevas herramientas. A día de hoy, me considero un desarrollador profundamente interiorizado en el mundo del Frontend, con habilidades en lógica y componentización optimizada. </p>
 
                     <a download="" href={CV} className="button button--flex">Descarga mi CV <i class="uil uil-file"></i></a>
                 </div>
