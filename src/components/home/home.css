@@ -2,8 +2,8 @@
 .home__content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 9.5rem;
-    
+    padding: 6.5rem 0 4.5rem;
+
     align-items: center;
 }
 .text{
