@@ -1,8 +1,17 @@
 import Calc from "../assets/calc.JPG";
 import Wrg from "../assets/wrg.JPG";
 import Movie from "../assets/movie.JPG";
-
+import SyJ from "../assets/Captura.JPG";
 export const projects = [
+    {
+        id: 0,
+        name: "Despacho Jurídico S&J",
+        description: "Proyecto real realizado para la firma de abogados S&J junto con otra desarrolladora, dos diseñadoras UX/UI y un Product Manager. Desarrollado en React JS, con funcionalidad de drag and drop para envío de currículums; pop ups interactivos y formulario de contacto.",
+        img: SyJ,
+        vivo: "",
+        github: "https://github.com/nadiasantiago/despacho",
+        category: "Reales"
+    },
     {
         id: 1,
         name: "Movie Store ReactJS",

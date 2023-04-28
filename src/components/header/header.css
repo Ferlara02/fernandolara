@@ -5,7 +5,6 @@
     left: 0;
     background-color: var(--background);
     z-index: 100;
-    
 }
 .nav__logo{
     width: 80px;
@@ -59,6 +58,7 @@
 }
 
 @media screen and (max-width: 768px){
+
     .header{
         top: initial;
         bottom: 0;

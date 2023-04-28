@@ -11,7 +11,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         setLoading(true)
-        emailjs.sendForm('service_v837z66', 'template_bkkbr1h', form.current, 'vSSQ5-PdZnwQ58Aof')
+        emailjs.sendForm('service_v837z66', 'template_wrj7b1d', form.current, 'vSSQ5-PdZnwQ58Aof')
             .then((result) => {
                 console.log(result.text);
                 toast.success('Formulario enviado con éxito!', {

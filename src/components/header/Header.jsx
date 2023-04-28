@@ -3,6 +3,8 @@ import { Logo } from "../../assets/logo";
 import "./header.css";
 import SinT from "../../assets/logo.png"
 import useTitle from "../../hooks/useTitle";
+
+
 const Header = () => {
     const [Toggle, showMenu] = useState(false);
     
